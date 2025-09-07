@@ -37,7 +37,7 @@
       type="text/css"
     />
   </head>
-  <body>
+  <body class="inter-font">
     <!-- header section start here  -->
     <header>
       <!-- nav section start here  -->
@@ -73,8 +73,8 @@
       <!-- nav section ends here  -->
 
       <!-- banner section start here  -->
-      <div class="banner-section">
-        <div class="md:flex items-center justify-between bg-[#CFF0DC]">
+      <div class="banner-section bg-[#CFF0DC]">
+        <div class="md:flex items-center justify-between container mx-auto">
           <div class="">
             <img src="assets/hero-leaf1.png" alt="banner-image" />
           </div>
@@ -109,18 +109,36 @@
       <section class="choose-section bg-[#f0fdf4]">
         <div class="all-items container mx-auto pt-20  ">
           <h1 class="choose-section-title mb-10 text-3xl font-semibold text-center">Choose Your Trees</h1>
-          <div class="grid grid-cols-5 gap-3">
-            <div class="col-span-1 border-1 border-orange-500">
+          <div class="grid md:grid-cols-5 gap-3 p-5 md:p-0">
+
+            <!-- category  -->
+            <div class="md:col-span-1 rounded-lg p-3">
               <h1 class="text-xl font-semibold">Categories</h1>
+              <div id="categories-container"></div>
+            </div>
+            <!-- category  -->
+
+            <!-- card items  -->
+            <div id="card-container" class="md:col-span-3  rounded-lg p-3 grid md:grid-cols-3 grid-cols-1 gap-3">
+             
             </div>
 
-            <div class="col-span-3 border-1 border-orange-500">
-              <h1>card-item</h1>
-            </div>
+            <!-- card items  -->
 
-            <div class="col-span-1 border-1 border-orange-500">
+
+            <!-- Your Cart -->
+            <div class="md:col-span-1 bg-white rounded-lg p-3">
               <h1 class="text-xl font-semibold">Your Cart</h1>
+              <div class="flex justify-between items-center bg-[#f0fdf4] p-3 rounded-md">
+                <div class="">
+                  <h3>Mango Tree</h3>
+                  <p>৳500 x 1</p>
+                </div>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
             </div>
+            <!-- Your Cart -->
+
           </div>
         </div>
       </section>
