@@ -88,7 +88,10 @@
               greener for future generations.
             </p>
             <button
-              class="text-green-600 bg-[#FACC15] rounded-full px-3 py-2 font-medium md:mb-0 mb-5">Get Involved</button>
+              class="text-green-600 bg-[#FACC15] rounded-full px-3 py-2 font-medium md:mb-0 mb-5"
+            >
+              Get Involved
+            </button>
           </div>
 
           <div class="hidden md:block">
@@ -103,13 +106,33 @@
     <!-- main section start here  -->
     <main>
       <!-- choose section start here  -->
+      <section class="choose-section bg-[#f0fdf4]">
+        <div class="all-items container mx-auto pt-20  ">
+          <h1 class="choose-section-title mb-10 text-3xl font-semibold text-center">Choose Your Trees</h1>
+          <div class="grid grid-cols-5 gap-3">
+            <div class="col-span-1 border-1 border-orange-500">
+              <h1 class="text-xl font-semibold">Categories</h1>
+            </div>
+
+            <div class="col-span-3 border-1 border-orange-500">
+              <h1>card-item</h1>
+            </div>
+
+            <div class="col-span-1 border-1 border-orange-500">
+              <h1 class="text-xl font-semibold">Your Cart</h1>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- choose section ends here  -->
 
       <!-- about section start here  -->
       <section class="about-section bg-[#f0fdf4] grid md:grid-cols-5">
         <div class=""></div>
         <div class="container mx-auto py-24 col-span-3 px-5">
-          <h1 class="about-title font-semibold text-3xl text-center mb-10">About the Campaign</h1>
+          <h1 class="about-title font-semibold text-3xl text-center mb-10">
+            About the Campaign
+          </h1>
           <div class="about-details md:flex items-center gap-5">
             <img src="assets/about.png" alt="about-img" />
 
@@ -133,32 +156,85 @@
       <!-- about section ends here  -->
 
       <!-- impact section start here  -->
-       <section class="impact-section bg-[#CFF0DC]">
+      <section class="impact-section bg-[#CFF0DC]">
         <div class="py-24 container mx-auto">
-            <h1 class="impact-title font-semibold text-3xl text-center mb-10">Our Impact</h1>
+          <h1 class="impact-title font-semibold text-3xl text-center mb-10">
+            Our Impact
+          </h1>
 
-            <div class="impact-items grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:p-0 px-5">
-                <div class="impact-item bg-white rounded-lg shadow-md py-10">
-                    <h1 class="font-semibold text-3xl text-green-700">500K+</h1>
-                    <p class="text-[#1F2937]">Trees Planted</p>
-                </div>
-                <div class="impact-item bg-white rounded-lg shadow-md py-10 ">
-                    <h1 class="font-semibold text-3xl text-green-700">500K+</h1>
-                    <p class="text-[#1F2937]">Trees Planted</p>
-                </div>
-                <div class="impact-item bg-white rounded-lg shadow-md py-10">
-                    <h1 class="font-semibold text-3xl text-green-700">500K+</h1>
-                    <p class="text-[#1F2937]">Trees Planted</p>
-                </div>
+          <div
+            class="impact-items grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:p-0 px-5"
+          >
+            <div class="impact-item bg-white rounded-lg shadow-md py-10">
+              <h1 class="font-semibold text-3xl text-green-700">500K+</h1>
+              <p class="text-[#1F2937]">Trees Planted</p>
             </div>
+            <div class="impact-item bg-white rounded-lg shadow-md py-10">
+              <h1 class="font-semibold text-3xl text-green-700">500K+</h1>
+              <p class="text-[#1F2937]">Trees Planted</p>
+            </div>
+            <div class="impact-item bg-white rounded-lg shadow-md py-10">
+              <h1 class="font-semibold text-3xl text-green-700">500K+</h1>
+              <p class="text-[#1F2937]">Trees Planted</p>
+            </div>
+          </div>
         </div>
-       </section>
+      </section>
       <!-- impact section ends here  -->
+
+      <!-- plant section start here  -->
+      <section class="plant-section bg-green-800">
+        <div class="md:py-24 py-10 container mx-auto">
+          <h1
+            class="plant-title font-semibold text-3xl text-center mb-10 text-white"
+          >
+            Plant a Tree Today
+          </h1>
+
+          <div class="flex justify-center">
+            <fieldset
+              class="fieldset bg-green-700 rounded-box w-sm md:w-1/3 md:p-6 p-3 shadow-lg"
+            >
+              <input
+                type="text"
+                class="md:mt-6 mt-3 bg-white p-3 rounded-md border-none placeholder:text-lg"
+                placeholder="Your Name"
+              />
+
+              <input
+                type="email"
+                class="bg-white p-3 rounded-md border-none placeholder:text-lg"
+                placeholder="Your Email Address"
+              />
+
+              <select class="bg-white p-2.5 rounded-md border-none text-lg">
+                <option disabled selected>Number of Trees</option>
+                <option>50</option>
+                <option>100</option>
+                <option>200</option>
+              </select>
+
+              <button
+                class="bg-[#FACC15] text-green-700 font-medium mt-0.5 py-2.5 rounded-full md:mb-6 mb-3"
+              >
+                Donate Now
+              </button>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+      <!-- plant section ends here  -->
     </main>
     <!-- main section ends here  -->
 
     <!-- footer section start here  -->
-    <footer></footer>
+    <footer class="bg-green-900">
+      <section
+        class="footer-section container mx-auto py-6 text-white text-center"
+      >
+        <p>© 2025 Green Earth. All Rights Reserved.</p>
+      </section>
+    </footer>
     <!-- footer section ends here  -->
 
     <!-- script file  -->
