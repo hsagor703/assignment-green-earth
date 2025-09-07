@@ -36,18 +36,18 @@
       rel="stylesheet"
       type="text/css"
     />
-
-    <!-- <i class="fa-solid fa-seedling text-green-600"></i> -->
   </head>
   <body>
     <!-- header section start here  -->
     <header>
       <!-- nav section start here  -->
-      <nav class="bg-green-600 py-5 px-15">
+      <nav class="bg-green-700 py-5">
         <div
           class="md:container mx-auto md:flex justify-between items-center text-center"
         >
           <div class="">
+            <i class="fa-solid fa-seedling text-green-400 text-2xl"></i>
+
             <a class="text-xl text-white font-bold">Green Earth</a>
           </div>
 
@@ -88,12 +88,10 @@
               greener for future generations.
             </p>
             <button
-              class="text-green-600 bg-[#FACC15] rounded-full px-3 py-2 font-medium">
-              Get Involved
-            </button>
+              class="text-green-600 bg-[#FACC15] rounded-full px-3 py-2 font-medium md:mb-0 mb-5">Get Involved</button>
           </div>
 
-          <div class="">
+          <div class="hidden md:block">
             <img src="assets/hero-leaf2.png" alt="banner-image" />
           </div>
         </div>
@@ -103,7 +101,37 @@
     <!-- header section ends here  -->
 
     <!-- main section start here  -->
-    <main></main>
+    <main>
+      <!-- choose section start here  -->
+      <!-- choose section ends here  -->
+
+      <!-- about section start here  -->
+      <div class="about-section bg-[#f0fdf4] grid md:grid-cols-5">
+        <div class=""></div>
+        <div class="container mx-auto py-24 col-span-3 px-5">
+          <h1 class="about-title font-semibold text-3xl text-center mb-10">About the Campaign</h1>
+          <div class="about-details md:flex items-center gap-5">
+            <img src="assets/about.png" alt="about-img" />
+
+            <div class="about-info text-[#1F2937]">
+              <p class="about-info-description mb-5">
+                Green Earth is a global tree plantation initiative dedicated to
+                fighting climate change. Since our start, we’ve planted over
+                500,000 trees worldwide. By joining our campaign, you help
+                restore forests, create habitats for wildlife, and combat global
+                warming.
+              </p>
+              <ul class="about-info-list list-disc px-6">
+                <li>Restoration of natural habitats</li>
+                <li>Improvement of air quality</li>
+                <li>Support for local communities</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about section ends here  -->
+    </main>
     <!-- main section ends here  -->
 
     <!-- footer section start here  -->
