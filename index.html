@@ -107,29 +107,50 @@
     <main>
       <!-- choose section start here  -->
       <section class="choose-section bg-[#f0fdf4]">
-        <div class="all-items container mx-auto pt-20  ">
-          <h1 class="choose-section-title mb-10 text-3xl font-semibold text-center">Choose Your Trees</h1>
-          <div class="grid md:grid-cols-5 gap-3 p-5 md:p-0">
+        <div class="all-items container mx-auto pt-20">
+          <!-- Open the modal using ID.showModal() method -->
+          <!-- <button class="btn" onclick="cardDetailsModal.showModal()">
+            open modal
+          </button> -->
+          <dialog id="cardDetailsModal" class="modal modal-bottom sm:modal-middle modal-xs">
+            <div class="modal-box">
+              <div id="modal-container" class=""></div>
+              <div class="modal-action">
+                <form method="dialog">
+                  <!-- if there is a button in form, it will close the modal -->
+                  <button class="btn">Close</button>
+                </form>
+              </div>
+            </div>
+          </dialog> <!--modal finish-->
 
+          <h1
+            class="choose-section-title mb-10 text-3xl font-semibold text-center"
+          >
+            Choose Your Trees
+          </h1>
+          <div class="grid md:grid-cols-5 gap-3 p-5 md:p-0">
             <!-- category  -->
-            <div class="md:col-span-1 rounded-lg p-3">
+            <div class="md:col-span-1 text-center md:text-left rounded-lg p-3">
               <h1 class="text-xl font-semibold">Categories</h1>
               <div id="categories-container"></div>
             </div>
             <!-- category  -->
 
             <!-- card items  -->
-            <div id="card-container" class="md:col-span-3  rounded-lg p-3 grid md:grid-cols-3 grid-cols-1 gap-3">
-             
-            </div>
+            <div
+              id="card-container"
+              class="md:col-span-3 rounded-lg p-3 grid md:grid-cols-3 grid-cols-1 gap-3"
+            ></div>
 
             <!-- card items  -->
-
 
             <!-- Your Cart -->
             <div class="md:col-span-1 bg-white rounded-lg p-3">
               <h1 class="text-xl font-semibold">Your Cart</h1>
-              <div class="flex justify-between items-center bg-[#f0fdf4] p-3 rounded-md">
+              <div
+                class="flex justify-between items-center bg-[#f0fdf4] p-3 rounded-md"
+              >
                 <div class="">
                   <h3>Mango Tree</h3>
                   <p>৳500 x 1</p>
@@ -138,7 +159,6 @@
               </div>
             </div>
             <!-- Your Cart -->
-
           </div>
         </div>
       </section>
