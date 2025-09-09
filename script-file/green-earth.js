@@ -141,7 +141,7 @@ const cartItemsHandle = (e) => {
 };
 
 const displayCartItems = (cartItems) => {
-  // alert("card added successfully");
+  alert("card added successfully");
   cartContainer.innerHTML = "";
   cartItems.forEach((cartItem) => {
     cartContainer.innerHTML += `
