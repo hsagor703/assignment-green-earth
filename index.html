@@ -112,7 +112,10 @@
           <!-- <button class="btn" onclick="cardDetailsModal.showModal()">
             open modal
           </button> -->
-          <dialog id="cardDetailsModal" class="modal modal-bottom sm:modal-middle modal-xs">
+          <dialog
+            id="cardDetailsModal"
+            class="modal modal-bottom sm:modal-middle modal-xs"
+          >
             <div class="modal-box">
               <div id="modal-container" class=""></div>
               <div class="modal-action">
@@ -122,13 +125,15 @@
                 </form>
               </div>
             </div>
-          </dialog> <!--modal finish-->
+          </dialog>
+          <!--modal finish-->
 
           <h1
             class="choose-section-title mb-10 text-3xl font-semibold text-center"
           >
             Choose Your Trees
           </h1>
+
           <div class="grid md:grid-cols-5 gap-3 p-5 md:p-0">
             <!-- category  -->
             <div class="md:col-span-1 text-center md:text-left rounded-lg p-3">
@@ -141,21 +146,25 @@
             <div
               id="card-container"
               class="md:col-span-3 rounded-lg p-3 grid md:grid-cols-3 grid-cols-1 gap-3"
-            ></div>
+            >
+              <!-- loading  -->
+              <div class="">
+                <span class="loading loading-dots loading-xl"></span>
+              </div>
+            </div>
 
             <!-- card items  -->
 
             <!-- Your Cart -->
-            <div class="md:col-span-1 bg-white rounded-lg p-3">
+            <div
+              id="cart-container-section"
+              class="md:col-span-1 bg-white rounded-lg p-3"
+            >
               <h1 class="text-xl font-semibold">Your Cart</h1>
-              <div
-                class="flex justify-between items-center bg-[#f0fdf4] p-3 rounded-md"
-              >
-                <div class="">
-                  <h3>Mango Tree</h3>
-                  <p>৳500 x 1</p>
-                </div>
-                <i class="fa-solid fa-xmark"></i>
+              <div id="cart-container" class="grid gap-2"></div>
+
+              <div id="price-container" class="">
+                
               </div>
             </div>
             <!-- Your Cart -->
@@ -203,15 +212,21 @@
           <div
             class="impact-items grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:p-0 px-5"
           >
-            <div class="impact-item bg-white rounded-lg shadow-md py-10">
+            <div
+              class="impact-item bg-white rounded-lg shadow-md py-10 hover:bg-green-200"
+            >
               <h1 class="font-semibold text-3xl text-green-700">500K+</h1>
               <p class="text-[#1F2937]">Trees Planted</p>
             </div>
-            <div class="impact-item bg-white rounded-lg shadow-md py-10">
+            <div
+              class="impact-item bg-white rounded-lg shadow-md py-10 hover:bg-green-200"
+            >
               <h1 class="font-semibold text-3xl text-green-700">500K+</h1>
               <p class="text-[#1F2937]">Trees Planted</p>
             </div>
-            <div class="impact-item bg-white rounded-lg shadow-md py-10">
+            <div
+              class="impact-item bg-white rounded-lg shadow-md py-10 hover:bg-green-200"
+            >
               <h1 class="font-semibold text-3xl text-green-700">500K+</h1>
               <p class="text-[#1F2937]">Trees Planted</p>
             </div>
