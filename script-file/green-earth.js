@@ -121,6 +121,7 @@ cardContainer.addEventListener("click", (e) => {
 // cart
 cardContainer.addEventListener("click", (e) => {
   if (e.target.classList.contains("card-btn")) {
+    alert("card added successfully");
     cartItemsHandle(e);
   }
 });
@@ -137,11 +138,10 @@ const cartItemsHandle = (e) => {
   });
 
   displayCartItems(cartItems);
-  
+
 };
 
 const displayCartItems = (cartItems) => {
-  alert("card added successfully");
   cartContainer.innerHTML = "";
   cartItems.forEach((cartItem) => {
     cartContainer.innerHTML += `
@@ -156,7 +156,7 @@ const displayCartItems = (cartItems) => {
                  </div>
          `;
   });
-  totalPrice()
+   totalPrice();
 };
 
 const cardItemsDelete = (cartItemsId) => {
