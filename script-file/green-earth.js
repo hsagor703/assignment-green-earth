@@ -8,6 +8,7 @@ const priceContainer = document.getElementById("price-container");
 const cartCrossBtn = document.getElementById("cart-cross-btn");
 let cartContainerTotalPrice = document.getElementById("cart-container-total-price")
 let cartItems = [];
+let cartTotalPrice = []
 // all plant api
 const displayAllPlant = () => {
   fetch("https://openapi.programming-hero.com/api/plants")
@@ -128,14 +129,16 @@ cardContainer.addEventListener("click", (e) => {
 
 const cartItemsHandle = (e) => {
   const title = e.target.parentNode.parentNode.children[1].innerText;
-  const price = e.target.parentNode.parentNode.children[3].children[1].innerText;
+  const priceText = e.target.parentNode.parentNode.children[3].children[1].innerText;
   const titleId = e.target.parentNode.parentNode.children[1].id;
-
+  const price = Number(priceText.replace("৳", ""));
   cartItems.push({
     title: title,
     price: price,
     id: titleId,
   });
+
+  cartTotalPrice.push(price)
 
   displayCartItems(cartItems);
 
@@ -156,6 +159,7 @@ const displayCartItems = (cartItems) => {
                  </div>
          `;
   });
+  priceContainer.innerHTML = "";
    totalPrice();
 };
 
@@ -169,15 +173,14 @@ const cardItemsDelete = (cartItemsId) => {
 };
 
 const totalPrice = () => {
-  priceContainer.innerHTML = ""
-  cartItems.forEach(carts => {
-    priceContainer.innerHTML = `
+  
+  const total = cartTotalPrice.reduce((acc, curr) => acc + curr, 0);
+   priceContainer.innerHTML = `
     <div class="flex p-3 justify-between">
         <h1>total</h1>
-        <p id="cart-container-total-price">${carts.price}</p>
+        <p id="cart-container-total-price">৳${total}</p>
     </div>
     `
-  });
 }
 
 
